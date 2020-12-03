@@ -1,11 +1,12 @@
 #include <stdio.h>
 
-void calcular_promedio(){
+
+void calcular_promedio(int numero){
+    
     float total =0;
     int count =0;
-    int n = 2;
     float valor ;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < numero; i++)
     {
         printf("Ingrese un numero: ");
         scanf("%f", &valor);
@@ -14,7 +15,7 @@ void calcular_promedio(){
         count ++; 
     }
     float promedio = total / count;
-    printf("El promedio es %f ", promedio);
+    printf("El promedio es %.2f ", promedio);
 }
 
 
